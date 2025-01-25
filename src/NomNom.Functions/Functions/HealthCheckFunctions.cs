@@ -5,7 +5,7 @@ using NomNom.Infrastructure.Data;
 
 namespace NomNomApi.Functions;
 
-public class HealthCheckFunction(RecipesDbContext context)
+public class HealthCheckFunctions(RecipesDbContext context)
 {
     [Function("health")]
     public async Task<HttpResponseData> HealthCheck(
